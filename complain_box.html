@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Complain Ticket</title>
+	<link rel="stylesheet" type="text/css" href="styl.css">
+	<link rel="stylesheet" type="text/css" href="boot\css\bootstrap.min.css">
+</head>
+
+<body style="background-image: url('pic/bg4.jpg'); background-repeat: no-repeat;background-size: cover;">
+
+	<div class="Menubar">
+
+			<div class="Navi">
+
+				<ul class="nav">
+					<li class="nav-item">
+					   <a> <img src="pic\logo.png"> </a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="index.html">Home</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="entry.html">Add Client</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="clint_list.html">Client List</a>
+					  </li>
+					  <li class="nav-item">
+				    <a class="nav-link active" href="complain_box.html">Complain Ticket</a>
+				  </li>
+					  
+				</ul>
+
+			</div>
+
+			<div class="search_bar">
+			  	 <nav class="navbar navbar-light">
+				  <form class="form-inline">
+				    <div class="input-group">
+				      <div class="input-group-prepend">
+				        <span class="input-group-text" id="basic-addon1"><img src="pic\search_ico.png"></span>
+				      </div>
+				      <input type="text" name="search" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+				    </div>
+				  </form>
+				</nav>
+			</div>
+
+		</div>
+
+
+		<div> 
+			<a href="complain_list.html"> 
+				<button class="switch_but"> Closed Item </button> 
+			</a>  
+		</div>
+
+		<div class="container">
+			<div class="contailer-fluid">
+				<div class="container-sm">
+					<div class="complain_box">
+						
+						<table>
+							<thead>
+								<tr>
+									<th style="width: 5%;">#</th>
+									<th style="width: 20%;">Username</th>
+									<th style="width: 60%;">Complain</th>
+									<th style="width: 15%;">Date of Adding</th>
+									<th style="width: 10%"></th>
+								</tr>
+							</thead>
+
+							<tbody>
+
+								<tr>
+				  				  <td> 1 </td>
+							 	  <td style="font-family: Century Schoolbook; color: #0073ff; font-size:22px;"> Hridoy001 </td>
+							 	  <td style="color: #f03a3a; font-size:20px;"> Speed Problem </td>
+							 	  <td> 10-Oct-2020 </td>									      
+							      <td> <a href="complain_box.html"> <button class="solve">Close</button> </a> </td>
+							    </tr>
+
+							    <tr>
+				  				  <td> 2 </td>
+							 	  <td style="font-family: Century Schoolbook; color: #0073ff; font-size:22px;"> Sumon20 </td>
+							 	  <td style="color: #f03a3a; font-size:20px;"> Net Slow </td>
+							 	  <td> 11-Oct-2020 </td>									      
+							      <td> <a href="complain_box.html"> <button class="solve">Close</button> </a> </td>
+							    </tr>
+
+							    <tr>
+				  				  <td> 3 </td>
+							 	  <td style="font-family: Century Schoolbook; color: #0073ff; font-size:22px;"> Mamun55 </td>
+							 	  <td style="color: #f03a3a; font-size:20px;"> Billing Problem </td>
+							 	  <td> 13-Oct-2020 </td>									      
+							      <td> <a href="complain_box.html"> <button class="solve">Close</button> </a> </td>
+							    </tr>
+					
+							</tbody>
+							
+						</table>						
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="contailer-fluid">
+				<div class="container-sm">
+					<div class="d-flex justify-content-center">
+						<div class="add_but">
+
+							<button onclick="on()" class="add_com">Add Complain</button>
+
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+
+
+<div id="overlay">
+    <div id="text">
+	  	<form action="" method="POST">
+			<label> Username: </label>
+			<input type="text" name="unam" placeholder="@Username"> <br> <br>
+			<label> Complain: </label> 
+			<input type="text" name="comp" placeholder="Enter Complain"> <br> <br>
+			<input class="submit" type="submit" name="submit" onclick="off()" value="Add Complain">			
+		</form>
+		<h2 onclick="off()" style="position: fixed; top: -90%; right: -50%;"> X </h2>
+	</div>
+</div>
+
+
+<script>
+	function on() {
+	  document.getElementById("overlay").style.display = "block";
+	}
+
+	function off() {
+	  document.getElementById("overlay").style.display = "none";
+	}
+</script>
+
+</body>
+</html>
